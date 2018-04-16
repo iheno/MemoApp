@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import MemoList from './src/components/MemoList';
 
 // import BodyText from './src/elements/BodyText';
 
@@ -15,28 +16,7 @@ export default class App extends React.Component {
           <Text style={styles.appbarTitle}>MEMO</Text>
         </View>
 
-        <View style={styles.memoList}>
-          <View style={styles.momoListItem}>
-            <Text style={styles.moemoTitle}>Lesson 1</Text>
-            <Text style={styles.momoDate}>2018.01.01</Text>
-          </View>
-          <View style={styles.momoListItem}>
-            <Text style={styles.moemoTitle}>Lesson 2</Text>
-            <Text style={styles.momoDate}>2018.01.02</Text>
-          </View>
-          <View style={styles.momoListItem}>
-            <Text style={styles.moemoTitle}>Lesson 3</Text>
-            <Text style={styles.momoDate}>2018.01.03</Text>
-          </View>
-          <View style={styles.momoListItem}>
-            <Text style={styles.moemoTitle}>Lesson 4</Text>
-            <Text style={styles.momoDate}>2018.01.04</Text>
-          </View>
-          <View style={styles.momoListItem}>
-            <Text style={styles.moemoTitle}>Lesson 5</Text>
-            <Text style={styles.momoDate}>2018.01.05</Text>
-          </View>
-        </View>
+        <MemoList />
 
         <View style={styles.memoAddButton}>
           <Text style={styles.memoAddButtonTitle}>+</Text>
@@ -73,25 +53,6 @@ const styles = StyleSheet.create({
     fontSize: 32,
     color: '#fff',
     lineHeight: 32,
-  },
-  memoList: {
-    width: '100%',
-    flex: 1,
-    paddingTop: 70,
-  },
-  momoListItem: {
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: '#eaeaea',
-  },
-  memoTitle: {
-    fontSize: 18,
-    marginBottom: 4,
-  },
-  momoDate: {
-    fontSize: 11,
-    color: '#dfdfdf',
-    paddingTop: 5,
   },
   appbar: {
     position: 'absolute',
