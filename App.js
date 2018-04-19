@@ -2,7 +2,8 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import Appbar from './src/components/Appbar';
-import MemoListScreen from './src/screens/MemoListScreen';
+//* import MemoListScreen from './src/screens/MemoListScreen';
+import MemoListScreen from './src/screens/MemoDetailScreen';
 
 /*
 import MemoList from './src/components/MemoList';
@@ -25,7 +26,6 @@ export default class App extends React.Component {
         */}
         <Appbar />
         <MemoListScreen />
-
       </View>
     );
   }
