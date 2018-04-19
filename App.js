@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 
 import Appbar from './src/components/Appbar';
 //* import MemoListScreen from './src/screens/MemoListScreen';
-import MemoListScreen from './src/screens/MemoDetailScreen';
+import MemoDetailScreen from './src/screens/MemoDetailScreen';
 
 /*
 import MemoList from './src/components/MemoList';
@@ -25,7 +25,7 @@ export default class App extends React.Component {
           <CircleButton>+</CircleButton>
         */}
         <Appbar />
-        <MemoListScreen />
+        <MemoDetailScreen />
       </View>
     );
   }
@@ -37,5 +37,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: 70,
   },
 });
