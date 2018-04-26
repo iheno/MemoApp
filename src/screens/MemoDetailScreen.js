@@ -17,7 +17,7 @@ class MemoDetailScreen extends React.Component {
 
         <View style={styles.memoContents}>
           <Text>
-            text text text
+            text text text text text
           </Text>
         </View>
 
